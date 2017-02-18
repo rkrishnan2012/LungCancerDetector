@@ -1,0 +1,26 @@
+{
+  "SpotPrice": "1.591",
+  "LaunchSpecification": {
+    "ImageId": "ami-e13739f6",
+    "InstanceType": "c4.8xlarge",
+    "KeyName": "p2rohit",
+    "BlockDeviceMappings": [
+      {
+        "DeviceName": "/dev/sda1",
+        "Ebs": {
+          "DeleteOnTermination": false,
+          "VolumeType": "gp2",
+          "VolumeSize": 100,
+          "SnapshotId": "snap-059a3b6819006fb55"
+        }
+      }
+    ],
+    "AllSecurityGroups": [
+      {
+        "GroupId": "sg-a38fc5df"
+      }
+    ]
+  },
+  "InstanceCount": 1,
+  "BlockDurationMinutes": 360
+}
