@@ -5,5 +5,5 @@
 ip=`aws ec2 describe-instances --query 'Reservations[0].Instances[0].PublicIpAddress' | sed -e 's/^"//' -e 's/"$//'`
 
 # ssh inside
-ssh -D8081 -i p2rohit.pem ubuntu@$ip
+ssh -i p2rohit.pem ec2-user@$ip
 
